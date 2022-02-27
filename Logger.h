@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-//todo add time hhmmss
+//todo add time hh:mm:ss
 
 #define LOG_INFO std::cout << "\x1b[38;5;63m" << "INFO > \x1b[38;5;231m"
 #define LOG_ALERT std::cout << "\x1b[38;5;83m" << "ALERT > \x1b[38;5;231m"
