@@ -12,9 +12,9 @@
 #define LOG_ERROR std::cout << "\x1b[38;5;227m" << "ERROR > \x1b[38;5;231m"
 #define LOG_DEBUG if(debuglevel > 1)std::cout << "\x1b[38;5;145m" << "DEBUG > \x1b[38;5;231m"
 
-int debuglevel = 1;
-
 class Logger {
+private:
+	static int debuglevel = 1;
 public:
 	static auto setDebugLevel(int new_level) -> void {
 		debuglevel = new_level;
